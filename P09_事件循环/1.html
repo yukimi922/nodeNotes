@@ -10,3 +10,11 @@
 </body>
 <script src="./01_事件循环函数调用.js"></script>
 </html>
+<script>
+  setTimeout(()=> {
+    console.log(111);
+  },200)
+  setImmediate(()=> {
+    console.log(222);
+  })
+</script>
