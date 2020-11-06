@@ -8,19 +8,19 @@ const fs = require('fs');
 
 const write = fs.createWriteStream('./b1.txt',{
   flags: "a",
-  start: 8  // 指定位置之后，插入的内容从指定位置开始覆盖
+  start: 3  // 指定位置之后，插入的内容从指定位置开始覆盖
 });
 write.write('ddddddd'); 
 
 
-write.write('xxxxxx'); 
+// write.write('xxxxxx'); 
 
-// write.close();
-write.end('ni hao');
+// // write.close();
+// write.end('ni hao');
 
-write.on('close', () => {
-  console.log('文件已关闭');
-})
+// write.on('close', () => {
+//   console.log('文件已关闭');
+// })
 
 // write.write('wwwww'); 
 
