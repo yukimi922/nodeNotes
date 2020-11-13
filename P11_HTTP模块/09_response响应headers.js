@@ -9,6 +9,7 @@ const server = http.createServer((req,res) => {
   // res.writeHead(402);
   res.write('请求结果返回1');
   res.end();
+  
 })
 
 server.listen(9000, () => {
